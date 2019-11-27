@@ -41,6 +41,7 @@ def init_dbsession():
                     password = "123456"
                 else:
                     password = base64.b64decode(password).decode('UTF-8')
+                    password = password[:-10]
             else:
                 password = "123456"
 

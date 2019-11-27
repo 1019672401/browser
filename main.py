@@ -81,6 +81,7 @@ class Controler():
         self.timer.start(timeout_time)
 
     def get_host_ip(self):
+        '''
         myname = socket.getfqdn(socket.gethostname())
         myaddr = socket.gethostbyname(myname)
         return  myaddr
@@ -93,7 +94,7 @@ class Controler():
             s.close()
 
         return ip
-    '''
+
 
     def run(self):
         self.browser.show()
